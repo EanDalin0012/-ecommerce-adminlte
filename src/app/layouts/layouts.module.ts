@@ -13,6 +13,11 @@ import {FooterComponent} from './footer/footer.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    HeaderComponent,
+    NavComponent,
+    FooterComponent
   ]
 })
 export class LayoutsModule {

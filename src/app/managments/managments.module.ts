@@ -20,5 +20,5 @@ import {ManagmentComponent} from './managment/managment.component';
     CommonModule
   ]
 })
-export class ManagmentsModule {
+export class ManagementsModule {
 }

@@ -6,12 +6,11 @@ const routes: Routes = [
   {path: '', redirectTo: '/', pathMatch: 'full'},
   {
     path: '',
-    component: LayoutComponent,
     children: [
-      {path: '', loadChildren: './products/products.module#ProductsModule'},
-      {path: 'account', loadChildren: './accounts/accounts.module#AccountsModule'},
-      {path: 'sales', loadChildren: './sales/sales.module#SalesModule'},
-      {path: 'cart', loadChildren: './carts/carts.module#CartsModule'},
+      {path: '', loadChildren: './dashboard/dashboard.module#DashboardModule'},
+      {path: 'import', loadChildren: './imports/imports.module#imports.module'},
+      {path: 'register', loadChildren: './registers/registers.module#RegistersModule'},
+      {path: 'management', loadChildren: './carts/carts.module#CartsModule'},
       {path: 'notification', loadChildren: './notification/notification.module#NotificationModule'},
     ]
   },

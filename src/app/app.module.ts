@@ -3,15 +3,19 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {Error404Component} from './errors/error404/error404.component';
+import { LayoutsModule } from './layouts/layouts.module';
+import { LayoutBlankComponent } from './layouts/layout-blank/layout-blank.component';
+import { LayoutComponent } from './layouts/layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-
+    LayoutBlankComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
+    LayoutsModule,
     AppRoutingModule
   ],
   providers: [],
