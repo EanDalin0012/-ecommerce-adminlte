@@ -7,11 +7,18 @@ import { DataTablesModule } from 'angular-datatables';
 
 
 @NgModule({
-  declarations: [DatatablesComponent],
+  declarations: [
+    DatatablesComponent
+  ],
   imports: [
     CommonModule,
     ComponentsRoutingModule,
     DataTablesModule,
   ]
 })
-export class ComponentsModule { }
+export class ComponentsModule {
+  constructor() {
+    console.log('ComponentsModule');
+
+  }
+}

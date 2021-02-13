@@ -3,7 +3,8 @@ import {RouterModule, Routes} from '@angular/router';
 import { DatatablesComponent } from './datatables/datatables.component';
 
 const routes: Routes = [
-  {path: '', component: DatatablesComponent }
+  {path: '', redirectTo: 'index', pathMatch: 'full'},
+  {path: 'index', component: DatatablesComponent }
 ];
 
 @NgModule({
