@@ -1,9 +1,8 @@
+
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { throwError, Observable } from "rxjs";
 import { tap, catchError, map } from "rxjs/operators";
-import { AllModulesData } from "src/assets/all-modules-data/all-modules-data";
-import { id } from "src/assets/all-modules-data/id";
 
 @Injectable({
   providedIn: "root",
@@ -45,11 +44,11 @@ export class AllModulesService {
   }
 
   // Get Method Api
-  get(type:any): Observable<AllModulesData[]> {
+  get(type:any): Observable<any[]> {
     this.apiurl = `api/${type}`;
 
     return this.http
-      .get<AllModulesData[]>(this.apiurl)
+      .get<any[]>(this.apiurl)
       .pipe(tap(), catchError(this.handleError));
   }
 
@@ -73,11 +72,11 @@ export class AllModulesService {
   }
 
   // Delete Method Api
-  delete(id: id, type:any): Observable<id> {
+  delete(id: any, type:any): Observable<any> {
     this.apiurl = `api/${type}`;
     const url = `${this.apiurl}/${id}`;
     return this.http
-      .delete<id>(url, this.httpOptions)
+      .delete<any>(url, this.httpOptions)
       .pipe(catchError(this.handleError));
   }
 }
