@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Sat Feb 13 2021 17:19:34 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+* src/app/app.module.ts
+* src/app/m-shares/m-shares.module.ts
+
+
+Created files:
+* src/app/m-shares/services/popup.service.spec.ts
+* src/app/m-shares/services/popup.service.ts
+
+
+Deleted files:
+
+
+Renamed files:

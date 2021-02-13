@@ -25,6 +25,12 @@ import { PopupModule } from '@progress/kendo-angular-popup';
 import { ProgressBarModule } from '@progress/kendo-angular-progressbar';
 import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 import { ScrollViewModule } from '@progress/kendo-angular-scrollview';
+import { SortableModule } from '@progress/kendo-angular-sortable';
+import { TooltipModule } from '@progress/kendo-angular-tooltip';
+import { UploadModule } from '@progress/kendo-angular-upload';
+
+
+
 
 
 
@@ -75,6 +81,9 @@ import { ScrollViewModule } from '@progress/kendo-angular-scrollview';
     ProgressBarModule,
     SchedulerModule,
     ScrollViewModule,
+    SortableModule,
+    TooltipModule,
+    UploadModule,
 
   ],
   providers: [
