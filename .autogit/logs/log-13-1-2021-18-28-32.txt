@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Sat Feb 13 2021 18:28:32 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/registers/categorys/categorys.component.ts
+
+
+Created files:
+* src/app/m-shares/models/model/category.ts
+* src/app/m-shares/models/model/request.ts
+
+
+Deleted files:
+
+
+Renamed files:

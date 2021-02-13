@@ -83,55 +83,55 @@ Version      : 3.6
 	local('MaterialIcons-Regular'),
 	url(assets/fonts/MaterialIcons-Regular.woff2) format('woff2'),
 	url(assets/fonts/MaterialIcons-Regular.woff) format('woff'),
-	url(assets/fonts/MaterialIcons-Regular.ttf) format('truetype');
+	url(assets/fonts/MaterialIcons-Regular.ttf) format('truetype') !important;
 }
 @font-face {
 	font-family: 'CircularStd';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Circular Std Book'), url('assets/fonts/CircularStd-Book.woff') format('woff');
+	src: local('Circular Std Book'), url('assets/fonts/CircularStd-Book.woff') format('woff') !important;
 }
 @font-face {
 	font-family: 'CircularStd';
 	font-style: italic;
 	font-weight: 400;
-	src: local('Circular Std Book Italic'), url('assets/fonts/CircularStd-BookItalic.woff') format('woff');
+	src: local('Circular Std Book Italic'), url('assets/fonts/CircularStd-BookItalic.woff') format('woff') !important;
 }
 @font-face {
 	font-family: 'CircularStd';
 	font-style: normal;
 	font-weight: 500;
-	src: local('Circular Std Medium'), url('assets/fonts/CircularStd-Medium.woff') format('woff');
+	src: local('Circular Std Medium'), url('assets/fonts/CircularStd-Medium.woff') format('woff') !important;
 }
 @font-face {
 	font-family: 'CircularStd';
 	font-style: italic;
 	font-weight: 500;
-	src: local('Circular Std Medium Italic'), url('assets/fonts/CircularStd-MediumItalic.woff') format('woff');
+	src: local('Circular Std Medium Italic'), url('assets/fonts/CircularStd-MediumItalic.woff') format('woff') !important;
 }
 @font-face {
 	font-family: 'CircularStd';
 	font-style: normal;
 	font-weight: 600;
-	src: local('Circular Std Bold'), url('assets/fonts/CircularStd-Bold.woff') format('woff');
+	src: local('Circular Std Bold'), url('assets/fonts/CircularStd-Bold.woff') format('woff') !important;
 }
 @font-face {
 	font-family: 'CircularStd';
 	font-style: italic;
 	font-weight: 600;
-	src: local('Circular Std Bold Italic'), url('assets/fonts/CircularStd-BoldItalic.woff') format('woff');
+	src: local('Circular Std Bold Italic'), url('assets/fonts/CircularStd-BoldItalic.woff') format('woff') !important;
 }
 @font-face {
 	font-family: 'CircularStd';
 	font-style: normal;
 	font-weight: 800;
-	src: local('Circular Std Black'), url('assets/fonts/CircularStd-Black.woff') format('woff');
+	src: local('Circular Std Black'), url('assets/fonts/CircularStd-Black.woff') format('woff') !important;
 }
 @font-face {
 	font-family: 'CircularStd';
 	font-style: italic;
 	font-weight: 800;
-	src: local('Circular Std Black Italic'), url('assets/fonts/CircularStd-BlackItalic.woff') format('woff');
+	src: local('Circular Std Black Italic'), url('assets/fonts/CircularStd-BlackItalic.woff') format('woff') !important;
 }
 
 /*-----------------
@@ -8206,4 +8206,391 @@ ul.comment-list li ul.children {
 
 .width30 {
   width: 30.4px !important;
+}
+
+.login-box, .register-box {
+  width: 360px;
+  margin: 7% auto;
+}
+
+.login-page, .register-page {
+  height: auto;
+  background: #d2d6de;
+}
+
+.login-logo, .register-logo {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.login-box-body, .register-box-body {
+  border-radius: 1px;
+  box-shadow: 0 3px 5px rgb(78 113 182 / 26%);
+  background: #fff;
+  padding: 20px;
+  border-top: 0;
+  color: #666;
+}
+.login-box-msg, .register-box-msg {
+  margin: 0;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+.has-feedback {
+  position: relative;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  font: normal 1em 'Noto Sans', 'Noto Sans Khmer', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  color: #000;
+  vertical-align: middle;
+  background: 0;
+  border: none;
+  overflow: visible;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
+}
+
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=tel],
+input[type=rang],
+input[type=email],
+input[type=url],
+input[type=date],
+input[type=datetime],
+input[type=month],
+input[type=tel],
+input[type=search],
+input[type=color],
+input[type=file],
+.k-textbox {
+    background-color: rgb(232, 240, 254);
+    /* background:#eff2f5; */
+    display: inline-block;
+    /* height: 40px; */
+    margin: 0;
+    padding: 3px 12px;
+    font-weight: normal;
+    font-size: 1rem;
+    font-family: 'Noto Sans', 'Noto Sans Khmer', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    color: #000;
+    vertical-align: middle;
+    border: none;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+input[type=checkbox]:not(.k-checkbox),
+input[type=radio]:not(.k-radio) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 1em;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+input[type=checkbox].chk_style+* {
+    color: rgba(0, 0, 0, .4);
+}
+
+input[type=checkbox]+span,
+input[type=radio]+span {
+    cursor: pointer;
+    opacity: .7;
+}
+
+input[type=checkbox]+span:before,
+input[type=radio]+*:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+input[type=checkbox],
+.checkbox01 {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+input[type=checkbox]:checked,
+input[type=checkbox]:checked+*:before {
+    background-position: left bottom;
+}
+
+input[type=radio] {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    vertical-align: middle;
+    /* background: url("assets/images/radio_off.png") no-repeat left center; */
+}
+
+input:checked+span {
+    opacity: 1;
+}
+
+input[type=checkbox]:only-child,
+input[type=radio]:only-child {
+    position: static;
+    margin: 0;
+    opacity: 1;
+}
+
+input[type=file] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type=text]:only-child,
+input[type=password]:only-child,
+input[type=search]:only-child,
+input[type=number]:only-child,
+input[type=email]:only-child,
+input[type=tel]:only-child,
+.k-textbox:only-child {
+    max-width: 100%;
+    width: 100%;
+    border-bottom: 2px solid #3f496d;
+}
+
+input::-ms-input-placeholder,
+input::-moz-placeholder {
+    font-weight: normal;
+    opacity: .5;
+}
+
+input::placeholder {
+    font-weight: normal;
+    opacity: .5;
+
+}
+
+input::-webkit-input-placeholder {
+    font-weight: normal;
+    opacity: .5;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+    display: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
+}
+
+input:focus:not([type=checkbox]):not([type=radio]),
+textarea:focus,
+.k-textbox:focus select:focus {
+    padding: 3px 10px;
+    border-bottom: 2px solid #3f496d;
+}
+
+input[readonly=readonly]:not([type=checkbox]):not([type=radio]) {
+    color: #000;
+    background: #d5d2ce;
+}
+
+input[readonly=readonly]:focus:not([type=checkbox]):not([type=radio]) {
+    padding: 5px 12px;
+    border: none;
+}
+
+input:disabled {
+    color: #cdcdcd;
+    background: #f1f1f1;
+}
+
+input.num {
+    text-align: right;
+}
+
+input.inp_error {
+    color: #f14874 !important;
+    border-color: #f14874 !important;
+}
+
+
+
+.k-checkbox-label::before,
+.k-radio-label::before {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.k-checkbox-label::before {
+    /* background: url("assets/images/checkbox.png") no-repeat left top; */
+    cursor: pointer;
+}
+
+.k-checkbox:checked+.k-checkbox-label::before {
+    background-position: left bottom;
+}
+
+.k-checkbox-label::after,
+.k-radio-label::before,
+.k-radio-label::after {
+    display: none;
+}
+
+.k-checkbox:checked+.k-checkbox-label::before {
+    background-color: transparent;
+    border: none;
+}
+
+
+select {
+  margin: 0;
+  min-width: 4em;
+  max-width: 100%;
+  height: 40px;
+  padding: 0 35px 3px 12px;
+  font-style: normal;
+  font-size: 1rem;
+  font-family: 'Noto Sans', 'Noto Sans Khmer', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  color: #000;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  background: #eff2f5 url("assets/images/select_arrow.png") no-repeat right center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select:disabled {
+  color: #cdcdcd;
+  background: #f1f1f1;
+}
+
+select:only-child {
+  display: block;
+  width: 100%;
+}
+
+select:focus {
+  border: 2px solid #3f496d !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+select.select02 {
+  background: url("assets/images/ico_down01.png") no-repeat right center;
+  border-bottom: 1px solid #7a6d5c;
+  border-radius: 0;
+}
+
+select.select03 {
+  padding-right: 16px;
+  font-size: 1em;
+  color: #696f79;
+  background: url("assets/images/ico_sort_arrow.png") no-repeat right center;
+  border: none;
+  border-radius: 0;
+}
+
+select.select03:only-child {
+  width: auto;
+}
+
+
+
+
+label {
+  position: relative;
+}
+
+label,
+label>span {
+  vertical-align: middle;
+}
+
+textarea {
+  width: 100%;
+  padding: 9px 12px;
+  font: normal 1rem/140% 'Noto Sans', 'Noto Sans Khmer', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  color: #000;
+  background: #eff2f5;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+textarea:only-child {
+  vertical-align: top;
+}
+
+textarea::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #898989;
+}
+
+textarea[readonly=readonly] {
+  color: #434343;
+}
+
+textarea:focus {
+  padding: 7px 10px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  margin: 24px 0;
+  background: #ecf0f3;
+  border: none;
 }

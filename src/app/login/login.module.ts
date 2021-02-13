@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import {LoginComponent} from './login/login.component';
 import {LayoutBlankComponent} from '../layouts/layout-blank/layout-blank.component';
 import {LoginRoutingModule} from './login-routing.module';
+import { MSharesModule } from '../m-shares/m-shares.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import {LoginRoutingModule} from './login-routing.module';
   ],
   imports: [
     CommonModule,
-    LoginRoutingModule
+    LoginRoutingModule,
+    MSharesModule
   ]
 })
 export class LoginModule {
