@@ -1,15 +1,28 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import { DataTablesModule } from 'angular-datatables';
+import {ModuleWithProviders, NgModule} from '@angular/core';
+import {CommonModule, DatePipe} from '@angular/common';
 import { ModalComponent } from './component/modal/modal.component';
-
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [ModalComponent],
   imports: [
     CommonModule,
-    DataTablesModule
+  ],
+  exports: [
+    TranslateModule
+  ],
+  entryComponents: [
+    ModalComponent,
+  ],
+  providers: [
+    DatePipe,
   ]
 })
 export class MSharesModule {
+  static forRoot(): ModuleWithProviders<MSharesModule> {
+    return {
+      ngModule: MSharesModule,
+      providers: []
+    };
+  }
 }
