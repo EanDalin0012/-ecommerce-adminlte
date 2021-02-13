@@ -8200,3 +8200,6 @@ ul.comment-list li ul.children {
 		min-width: inherit;
 	}
 }
+.sidebar-menu li a {
+  color: #b7c0cd !important;
+}
