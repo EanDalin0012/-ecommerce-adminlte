@@ -1,0 +1,23 @@
+-------------------- Auto-Git Log --------------------
+		Sat Feb 13 2021 12:37:37 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* angular.json
+* package-lock.json
+* package.json
+* src/app/layouts/header/header.component.ts
+* src/app/layouts/nav/nav.component.html
+* src/app/layouts/nav/nav.component.ts
+
+
+Created files:
+* .autogit/logs/log-13-1-2021-12-7-11.txt
+* src/app/m-shares/all-modules.service.ts
+
+
+Deleted files:
+* src/app/layouts/header/header.service.ts
+
+
+Renamed files:

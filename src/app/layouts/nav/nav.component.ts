@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { Event, NavigationEnd, Router } from '@angular/router';
-import { AllModulesService } from '../../m-shares/all-modules.service';
+import { AllModulesService } from 'src/app/m-shares/all-modules.service';
 
 @Component({
   selector: 'app-nav',
@@ -21,8 +21,24 @@ export class NavComponent implements OnInit {
     settings: false,
   };
 
-  members = {};
-  groups = {};
+  members = {
+    active: 'Mike Litorus',
+    total: [
+      { name: "John Doe", count: 3},
+      { name: "Richard Miles", count: 0},
+      { name: "John Smith", count: 7},
+      { name: "Mike Litorus", count: 9}
+    ]
+  };
+  groups = {
+    active: '',
+    total: [
+      'general',
+      'video responsive survey',
+      '500rs',
+      'warehouse',
+    ]
+  };
 
   constructor(
     private router: Router,
@@ -52,7 +68,7 @@ export class NavComponent implements OnInit {
     });
 
     this.groups = { ...this.allModulesService.groups };
-    this.members = { ...this.allModulesService.members };
+
   }
 
 
