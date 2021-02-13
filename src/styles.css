@@ -8280,9 +8280,8 @@ input[type=color],
 input[type=file],
 .k-textbox {
     background-color: rgb(232, 240, 254);
-    /* background:#eff2f5; */
     display: inline-block;
-    /* height: 40px; */
+    height: 34px;
     margin: 0;
     padding: 3px 12px;
     font-weight: normal;
@@ -8593,4 +8592,54 @@ hr {
   margin: 24px 0;
   background: #ecf0f3;
   border: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+kendo-grid-toolbar {
+  font-family: "Noto Sans", "Noto Sans CJK TC", "Noto Sans Khmer", "Roboto", Verdana, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+kendo-pdf-export {
+  font-family: "Noto Sans", "Noto Sans CJK TC", "Noto Sans Khmer", "Roboto", Verdana, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.k-widget ::selection,
+.k-block ::selection,
+.k-panel ::selection {
+  background-color: #b1a89d;
+}
+
+input:focus:not([type=checkbox]):not([type=radio]), textarea:focus, .k-textbox:focus select:focus {
+  padding: 3px 10px;
+  border-bottom: 2px solid #3f496d;
+}
+
+.form-control:focus {
+  border-color: #3c8dbc;
+  box-shadow: none;
+  background-color: rgb(232, 240, 254);
+}
+
+.btn-add-00:hover {
+  border-color: #212529;
+  color: #ffffff;
+  background-color: #212529;
+  background-image: none;
+}
+
+.btn-w100px-h35px {
+  height: 35px;
+  width: 100px;
+}
+
+.k-button {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }

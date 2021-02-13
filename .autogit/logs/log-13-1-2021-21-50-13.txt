@@ -1,0 +1,28 @@
+-------------------- Auto-Git Log --------------------
+		Sat Feb 13 2021 21:50:13 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* angular.json
+* src/app/app.module.ts
+* src/app/login/login.module.ts
+* src/app/login/login/login.component.css
+* src/app/login/login/login.component.html
+* src/app/login/login/login.component.ts
+* src/app/m-shares/services/authorize.service.ts
+* src/styles.css
+
+
+Created files:
+* .autogit/logs/log-13-1-2021-18-28-32.txt
+* src/app/m-shares/models/model/authorization.ts
+* src/app/m-shares/models/model/basic-authorize.ts
+* src/assets/kendo-theme/bootstrap-4.22.0/3425914.jpg
+* src/assets/kendo-theme/bootstrap-4.22.0/all.css
+* src/assets/kendo-theme/default-4.24.0/all.css
+
+
+Deleted files:
+
+
+Renamed files:
