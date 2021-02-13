@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import { Event, NavigationEnd, Router } from '@angular/router';
 import { AllModulesService } from 'src/app/m-shares/all-modules.service';
+import { MessageService } from '../../m-shares/message.service';
 
 @Component({
   selector: 'app-nav',
@@ -8,6 +9,7 @@ import { AllModulesService } from 'src/app/m-shares/all-modules.service';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  toggleCss = false;
 
   urlComplete = {
     mainUrl: '',
@@ -42,7 +44,8 @@ export class NavComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private allModulesService: AllModulesService
+    private allModulesService: AllModulesService,
+    private messageService: MessageService
   ) {
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
@@ -73,6 +76,10 @@ export class NavComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.messageService.toggleMessageData.subscribe(message => {
+        this.toggleCss = message;
+    });
+
     // Slide up and down of menus
     $(document).on("click", "#sidebar-menu a", function (e) {
       e.stopImmediatePropagation();

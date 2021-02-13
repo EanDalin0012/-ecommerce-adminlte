@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { MessageService } from '../../m-shares/message.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -13,9 +14,10 @@ export class HeaderComponent implements OnInit {
   notifications: any;
   messagesData: any;
 
+  toggle = false;
   constructor(
-  ) {
-  }
+    private messageService: MessageService
+  ) {}
 
   ngOnInit(): void {
     this.notifications = [
@@ -98,5 +100,12 @@ export class HeaderComponent implements OnInit {
 
   onSubmit() {
 
+  }
+
+  toggleBtn() {
+
+    this.toggle = ! this.toggle;
+    console.log(this.toggle);
+    this.messageService.visitToggleMessage(this.toggle);
   }
 }

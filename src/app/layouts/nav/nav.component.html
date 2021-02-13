@@ -2,7 +2,7 @@
 <div class="sidebar" id="sidebar">
   <div class="sidebar-inner slimscroll">
       <perfect-scrollbar [scrollIndicators]="false">
-          <div id="sidebar-menu" class="sidebar-menu">
+          <div id="sidebar-menu" class="sidebar-menu" [ngClass]="{'ps--active-x': toggleCss == true, 'ps ps--active-y': toggleCss == false }">
               <ul *ngIf="sidebarMenus.default">
                   <li class="menu-title">
                       <span>Main</span>
