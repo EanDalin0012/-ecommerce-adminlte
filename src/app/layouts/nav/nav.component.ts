@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import { Event, NavigationEnd, Router } from '@angular/router';
 import { AllModulesService } from 'src/app/m-shares/all-modules.service';
-import { MessageService } from '../../m-shares/message.service';
+import { MessageService } from '../../m-shares/services/message.service';
 
 @Component({
   selector: 'app-nav',

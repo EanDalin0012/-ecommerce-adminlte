@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { MessageService } from '../../m-shares/message.service';
+import { MessageService } from '../../m-shares/services/message.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
