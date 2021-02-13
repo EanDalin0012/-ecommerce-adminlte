@@ -76,9 +76,11 @@ export class NavComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.messageService.toggleMessageData.subscribe(message => {
-        this.toggleCss = message;
-    });
+  //   this.messageService.toggleMessageData.subscribe(message => {
+  //     this.toggleCss = message;
+  //     console.log(this.toggleCss);
+
+  // });
 
     // Slide up and down of menus
     $(document).on("click", "#sidebar-menu a", function (e) {
