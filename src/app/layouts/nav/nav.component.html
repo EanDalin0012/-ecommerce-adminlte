@@ -32,9 +32,9 @@
                           <span> Register </span>
                           <span class="menu-arrow"></span>
                       </a>
-                      
+
                       <ul style="display: none;" [ngStyle]="{ 'display' : urlComplete.mainUrl === 'reports' ? 'block' : 'none' }">
-                          <li routerLink="/reports/expense-report">
+                          <li (click)="openPage('category')">
                             <a href="javascript:" [ngClass]="{'active' : urlComplete.subUrl === 'expense-report'}">Categorys</a>
                           </li>
                           <li routerLink="/reports/expense-report">

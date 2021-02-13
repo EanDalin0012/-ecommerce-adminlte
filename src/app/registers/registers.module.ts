@@ -14,6 +14,7 @@ import {ProductDetailEditComponent} from './product-detail-edit/product-detail-e
 import {ProductDetailAddComponent} from './product-detail-add/product-detail-add.component';
 import {RegisterComponent} from './register/register.component';
 import { RegistersRoutingModule } from './registers-routing.module';
+import {MSharesModule} from '../m-shares/m-shares.module';
 
 
 @NgModule({
@@ -34,7 +35,9 @@ import { RegistersRoutingModule } from './registers-routing.module';
   ],
   imports: [
     CommonModule,
-    RegistersRoutingModule
+    RegistersRoutingModule,
+    MSharesModule
+
   ]
 })
 export class RegistersModule {

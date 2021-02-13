@@ -105,27 +105,25 @@ export class NavComponent implements OnInit {
     this.allModulesService.members.active = member;
   }
 
-  onOpenPage(urlCode: string) {
+  openPage(urlCode: string) {
     let url = '/main/';
     switch (urlCode) {
-      case 'Register1000':
-      case 'Register2000':
-      case 'RegiPro':
-      case 'Vendor':
-      case 'RegiCate':
+      case 'category':
+      case 'product':
+      case 'vendor':
         url += `register/${URLCODE[urlCode]}`;
         break;
       case 'Import1000':
-        url += `imports/${URLCODE[urlCode]}`; // 'imports/' + ${URLCODE[urlCode]} // URLCODE.Register5000;
+        url += `import/${URLCODE[urlCode]}`; // 'imports/' + ${URLCODE[urlCode]} // URLCODE.Register5000;
         break;
-      case '3000': // setting
-        url += `home/${URLCODE[urlCode]}`;
+      case 'management':
+        url += `management/${URLCODE[urlCode]}`;
         break;
-      case 'User1000': // setting
-      case 'UserMngAcc': // setting Set-Price-Product
-      case 'User-Info':
-      case 'Set-Price-Product':
-        url += `user-management/${URLCODE[urlCode]}`;
+      case 'notification':
+        url += `notification/${URLCODE[urlCode]}`;
+        break;
+      case 'components':
+        url += `components/${URLCODE[urlCode]}`;
         break;
     }
     this.router.navigate([url]);

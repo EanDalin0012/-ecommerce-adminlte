@@ -8,7 +8,7 @@ import { LayoutBlankComponent } from './layouts/layout-blank/layout-blank.compon
 import { LayoutComponent } from './layouts/layout/layout.component';
 import { DataTablesModule } from 'angular-datatables';
 import { ToastrModule } from 'ngx-toastr';
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { ChartsModule } from '@progress/kendo-angular-charts';
 import 'hammerjs';
@@ -28,23 +28,12 @@ import { ScrollViewModule } from '@progress/kendo-angular-scrollview';
 import { SortableModule } from '@progress/kendo-angular-sortable';
 import { TooltipModule } from '@progress/kendo-angular-tooltip';
 import { UploadModule } from '@progress/kendo-angular-upload';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -67,24 +56,13 @@ import { UploadModule } from '@progress/kendo-angular-upload';
         preventDuplicates: true,
       }
     ),
-    ButtonsModule,
-    ChartsModule,
-    DateInputsModule,
-    DialogsModule,
-    DropDownsModule,
-    ExcelExportModule,
-    GridModule,
-    LayoutModule,
-    NotificationModule,
-    PDFExportModule,
-    PopupModule,
-    ProgressBarModule,
-    SchedulerModule,
-    ScrollViewModule,
-    SortableModule,
-    TooltipModule,
-    UploadModule,
-
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      },
+    }),
   ],
   providers: [
 

@@ -133,24 +133,9 @@ export enum STATUS {
 }
 
 export enum URLCODE {
-  'Register1000'        = 'main-category',
-  'Register2000'        = 'sub-category',
-  'Register3000'        = 'company',
-  'Register4000'        = 'supplier',
-  'Register5000'        = 'product',
-  /*  */
-  'Import1000'          = 'import-product-list',
-  'Import1100'          = 'import-product',
-
-  'User1000'            = 'user-account',
-  'User2000'            = 'user-info',
-  'UserMngAcc'          = 'user-account',
-  'RegiCate'            = 'category',
-  'Vendor'              = 'vendor',
-  'RegiPro'             = 'product',
-  'Set-Price-Product'   = 'set-price-product',
-  'User-Info'           = 'user-info',
-  'view-product-detail' = 'view-product-detail'
+  'category'        = 'category',
+  'vendor'          = 'vendor',
+  'product'         = 'product'
 }
 
 export enum CURRENCY_CODE {
