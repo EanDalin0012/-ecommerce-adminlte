@@ -12521,10 +12521,6 @@ input.inp_cal:focus {
   display: none;
 }
 
-
-/***** logo *****/
-
-
 /***** popup *****/
 
 .k-dialog-wrapper {
@@ -12919,7 +12915,7 @@ input.inp_cal:focus {
 
 /* .daterangepicker .ranges{content: "";position: fixed;width: 100%;height: 100%;left: 0;top: 0;background-color: rgba(0,0,0,0.6);} */
 
-*/ .daterangepicker:before {
+.daterangepicker:before {
   content: "Calender";
   position: absolute;
   width: 100%;
@@ -14138,10 +14134,7 @@ padding: 0;
 .dropdown-menu.show {
 display: block;
 }
-.dropdown-menu[x-placement^=bottom], .dropdown-menu[x-placement^=left], .dropdown-menu[x-placement^=right], .dropdown-menu[x-placement^=top] {
-/* right: auto; */
-/* bottom: auto; */
-}
+
 .dropdown-menu {
 font-size: 13px;
 }
