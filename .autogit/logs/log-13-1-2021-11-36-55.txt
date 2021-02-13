@@ -1,0 +1,29 @@
+-------------------- Auto-Git Log --------------------
+		Sat Feb 13 2021 11:36:55 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/app-routing.module.ts
+* src/app/app.module.ts
+* src/app/layouts/header/header.component.html
+* src/app/layouts/header/header.component.ts
+* src/app/layouts/layout/layout.component.html
+* src/app/layouts/layouts.module.ts
+* src/app/login/login-routing.module.ts
+* src/app/m-module/m-module-routing.module.ts
+* src/app/managments/managments.module.ts
+
+
+Created files:
+* src/app/dashboard/admin-dashboard/admin-dashboard.component.css
+* src/app/dashboard/admin-dashboard/admin-dashboard.component.html
+* src/app/dashboard/admin-dashboard/admin-dashboard.component.spec.ts
+* src/app/dashboard/admin-dashboard/admin-dashboard.component.ts
+* src/app/dashboard/dashboard.module.ts
+* src/app/layouts/header/header.service.ts
+
+
+Deleted files:
+
+
+Renamed files:

@@ -5,7 +5,7 @@ import {LayoutBlankComponent} from './layouts/layout-blank/layout-blank.componen
 import {Error404Component} from './errors/error404/error404.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/login', pathMatch: 'full'},
+  {path: '', redirectTo: '/main', pathMatch: 'full'},
   {path: 'main', component: LayoutComponent, loadChildren: './m-module/m-module.module#MModuleModule'},
   {path: 'login', component: LayoutComponent,loadChildren: './login/login.module#LoginModule'},
   {path: '**', component: Error404Component},

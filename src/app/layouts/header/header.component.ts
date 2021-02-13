@@ -96,4 +96,12 @@ export class HeaderComponent implements OnInit {
     ];
   }
 
+  clearData(notification: any) {
+    console.log(notification);
+
+  }
+
+  onSubmit() {
+
+  }
 }
