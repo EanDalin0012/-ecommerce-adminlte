@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Sat Feb 13 2021 15:00:39 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/dashboard/admin-dashboard/admin-dashboard.component.html
+* src/app/dashboard/admin-dashboard/admin-dashboard.component.ts
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
