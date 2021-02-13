@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import { Event, NavigationEnd, Router } from '@angular/router';
 import { AllModulesService } from 'src/app/m-shares/all-modules.service';
 import { MessageService } from '../../m-shares/services/message.service';
+import {URLCODE} from '../../m-shares/constants/common.const';
 
 @Component({
   selector: 'app-nav',
@@ -26,10 +27,10 @@ export class NavComponent implements OnInit {
   members = {
     active: 'Mike Litorus',
     total: [
-      { name: "John Doe", count: 3},
-      { name: "Richard Miles", count: 0},
-      { name: "John Smith", count: 7},
-      { name: "Mike Litorus", count: 9}
+      { name: 'John Doe', count: 3},
+      { name: 'Richard Miles', count: 0},
+      { name: 'John Smith', count: 7},
+      { name: 'Mike Litorus', count: 9}
     ]
   };
   groups = {
@@ -102,6 +103,32 @@ export class NavComponent implements OnInit {
 
   setActive(member:string) {
     this.allModulesService.members.active = member;
+  }
+
+  onOpenPage(urlCode: string) {
+    let url = '/main/';
+    switch (urlCode) {
+      case 'Register1000':
+      case 'Register2000':
+      case 'RegiPro':
+      case 'Vendor':
+      case 'RegiCate':
+        url += `register/${URLCODE[urlCode]}`;
+        break;
+      case 'Import1000':
+        url += `imports/${URLCODE[urlCode]}`; // 'imports/' + ${URLCODE[urlCode]} // URLCODE.Register5000;
+        break;
+      case '3000': // setting
+        url += `home/${URLCODE[urlCode]}`;
+        break;
+      case 'User1000': // setting
+      case 'UserMngAcc': // setting Set-Price-Product
+      case 'User-Info':
+      case 'Set-Price-Product':
+        url += `user-management/${URLCODE[urlCode]}`;
+        break;
+    }
+    this.router.navigate([url]);
   }
 
 }
