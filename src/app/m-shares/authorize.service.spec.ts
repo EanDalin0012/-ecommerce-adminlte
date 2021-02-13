@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { AuthorizeService } from './authorize.service';
+import {AuthorizeService} from './authorize.service';
 
 describe('AuthorizeService', () => {
   let service: AuthorizeService;

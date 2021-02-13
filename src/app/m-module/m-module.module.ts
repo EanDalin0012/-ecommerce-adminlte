@@ -1,8 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MModuleRoutingModule } from './m-module-routing.module';
-import { LayoutComponent } from '../layouts/layout/layout.component';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {MModuleRoutingModule} from './m-module-routing.module';
+import {LayoutComponent} from '../layouts/layout/layout.component';
 
 
 @NgModule({
@@ -14,4 +13,5 @@ import { LayoutComponent } from '../layouts/layout/layout.component';
     MModuleRoutingModule
   ]
 })
-export class MModuleModule { }
+export class MModuleModule {
+}

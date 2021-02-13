@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
-import { NavComponent } from './nav/nav.component';
-import { FooterComponent } from './footer/footer.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {HeaderComponent} from './header/header.component';
+import {NavComponent} from './nav/nav.component';
+import {FooterComponent} from './footer/footer.component';
 
 
 @NgModule({
@@ -15,4 +15,5 @@ import { FooterComponent } from './footer/footer.component';
     CommonModule
   ]
 })
-export class LayoutsModule { }
+export class LayoutsModule {
+}

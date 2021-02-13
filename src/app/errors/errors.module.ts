@@ -1,8 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Error404Component } from './error404/error404.component';
-import { ErrorComponent } from './error/error.component';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {Error404Component} from './error404/error404.component';
+import {ErrorComponent} from './error/error.component';
 
 
 @NgModule({
@@ -11,4 +10,5 @@ import { ErrorComponent } from './error/error.component';
     CommonModule
   ]
 })
-export class ErrorsModule { }
+export class ErrorsModule {
+}

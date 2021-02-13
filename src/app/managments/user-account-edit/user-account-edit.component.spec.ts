@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { UserAccountEditComponent } from './user-account-edit.component';
+import {UserAccountEditComponent} from './user-account-edit.component';
 
 describe('UserAccountEditComponent', () => {
   let component: UserAccountEditComponent;
@@ -8,9 +8,9 @@ describe('UserAccountEditComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserAccountEditComponent ]
+      declarations: [UserAccountEditComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

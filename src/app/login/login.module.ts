@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { LoginComponent } from './login/login.component';
-import { LayoutBlankComponent } from '../layouts/layout-blank/layout-blank.component';
-import { LoginRoutingModule } from './login-routing.module';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {LoginComponent} from './login/login.component';
+import {LayoutBlankComponent} from '../layouts/layout-blank/layout-blank.component';
+import {LoginRoutingModule} from './login-routing.module';
 
 
 @NgModule({
@@ -16,4 +15,5 @@ import { LoginRoutingModule } from './login-routing.module';
     LoginRoutingModule
   ]
 })
-export class LoginModule { }
+export class LoginModule {
+}

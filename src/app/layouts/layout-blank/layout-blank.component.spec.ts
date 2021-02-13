@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { LayoutBlankComponent } from './layout-blank.component';
+import {LayoutBlankComponent} from './layout-blank.component';
 
 describe('LayoutBlankComponent', () => {
   let component: LayoutBlankComponent;
@@ -8,9 +8,9 @@ describe('LayoutBlankComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LayoutBlankComponent ]
+      declarations: [LayoutBlankComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
