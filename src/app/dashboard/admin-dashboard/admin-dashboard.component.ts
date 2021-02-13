@@ -19,10 +19,15 @@ export class AdminDashboardComponent implements OnInit {
     a: "#007bff",
     b: "#6610f2",
   };
+  dtOptions: DataTables.Settings = {};
 
   constructor() { }
 
   ngOnInit(): void {
+    this.dtOptions = {
+      // ... skipped ...
+      dom: 'lrtip'
+    }
 
     this.chartOptions = {
       xkey: "y",
