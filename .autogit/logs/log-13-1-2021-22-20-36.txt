@@ -1,0 +1,82 @@
+-------------------- Auto-Git Log --------------------
+		Sat Feb 13 2021 22:20:36 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* src/styles.css
+
+
+Created files:
+* .autogit/logs/log-13-1-2021-21-50-13.txt
+* src/assets/images/60740.svg
+* src/assets/images/add-button.svg
+* src/assets/images/add_btn.png
+* src/assets/images/btn_add.png
+* src/assets/images/btn_close.png
+* src/assets/images/btn_del01.png
+* src/assets/images/btn_del01_st02.png
+* src/assets/images/btn_del01_st03.png
+* src/assets/images/btn_del02.png
+* src/assets/images/btn_del03.png
+* src/assets/images/btn_del04.png
+* src/assets/images/btn_del_widget.png
+* src/assets/images/btn_fav_off.png
+* src/assets/images/btn_livechat_fix.png
+* src/assets/images/btn_next01.gif
+* src/assets/images/btn_next_month.png
+* src/assets/images/btn_plus01.png
+* src/assets/images/btn_popclose.png
+* src/assets/images/btn_popclose02.png
+* src/assets/images/btn_prev01.gif
+* src/assets/images/btn_prev_month.png
+* src/assets/images/calculator.svg
+* src/assets/images/cancel.svg
+* src/assets/images/check-circle-solid.svg
+* src/assets/images/close-solid.svg
+* src/assets/images/close.svg
+* src/assets/images/com_Error_40.png
+* src/assets/images/com_Error_50.png
+* src/assets/images/file.svg
+* src/assets/images/ico_add_user.png
+* src/assets/images/ico_approval_requester.png
+* src/assets/images/ico_calculat_plus.png
+* src/assets/images/ico_calendar01.png
+* src/assets/images/ico_close.svg
+* src/assets/images/ico_down01.png
+* src/assets/images/ico_down02.png
+* src/assets/images/ico_down03.png
+* src/assets/images/ico_down04.png
+* src/assets/images/ico_down05.png
+* src/assets/images/ico_edit01.png
+* src/assets/images/ico_error01.png
+* src/assets/images/ico_facebook.png
+* src/assets/images/ico_file_down.png
+* src/assets/images/ico_guide01.png
+* src/assets/images/ico_lang_arrow.png
+* src/assets/images/ico_loading.gif
+* src/assets/images/ico_next01.png
+* src/assets/images/ico_next01_active.png
+* src/assets/images/ico_noti.png
+* src/assets/images/ico_plus_widget.png
+* src/assets/images/ico_prev01.png
+* src/assets/images/ico_prev01_active.png
+* src/assets/images/ico_rarrow02.png
+* src/assets/images/ico_sitemap_arrow.png
+* src/assets/images/ico_sort_arrow.png
+* src/assets/images/ico_sorting.png
+* src/assets/images/ico_sorting_down.png
+* src/assets/images/ico_sorting_up.png
+* src/assets/images/ico_step_down.png
+* src/assets/images/ico_write01.png
+* src/assets/images/icon-excel.svg
+* src/assets/images/icon-upload.svg
+* src/assets/images/icon_close.svg
+* src/assets/images/refresh.svg
+* src/assets/images/save.svg
+* src/assets/images/select_arrow.png
+
+
+Deleted files:
+
+
+Renamed files:
