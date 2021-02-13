@@ -8203,3 +8203,7 @@ ul.comment-list li ul.children {
 .sidebar-menu li a {
   color: #b7c0cd !important;
 }
+
+.width30 {
+  width: 30.4px !important;
+}

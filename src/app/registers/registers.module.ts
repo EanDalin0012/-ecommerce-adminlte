@@ -13,6 +13,7 @@ import {ProductDetailsComponent} from './product-details/product-details.compone
 import {ProductDetailEditComponent} from './product-detail-edit/product-detail-edit.component';
 import {ProductDetailAddComponent} from './product-detail-add/product-detail-add.component';
 import {RegisterComponent} from './register/register.component';
+import { RegistersRoutingModule } from './registers-routing.module';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import {RegisterComponent} from './register/register.component';
     RegisterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RegistersRoutingModule
   ]
 })
 export class RegistersModule {
