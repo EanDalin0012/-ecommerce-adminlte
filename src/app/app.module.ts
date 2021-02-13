@@ -9,6 +9,12 @@ import { LayoutComponent } from './layouts/layout/layout.component';
 import { DataTablesModule } from 'angular-datatables';
 import { ToastrModule } from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { ChartsModule } from '@progress/kendo-angular-charts';
+import 'hammerjs';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
         preventDuplicates: true,
       }
     ),
+    ButtonsModule,
+    ChartsModule,
 
   ],
   providers: [
