@@ -1,0 +1,27 @@
+-------------------- Auto-Git Log --------------------
+		Sat Feb 13 2021 12:07:11 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* angular.json
+* karma.conf.js
+* src/app/app-routing.module.ts
+* src/app/app.module.ts
+* src/app/dashboard/dashboard.module.ts
+* src/app/layouts/header/header.component.html
+* src/app/layouts/header/header.component.ts
+* src/app/layouts/layout/layout.component.html
+* src/app/login/login.module.ts
+* src/app/m-module/m-module-routing.module.ts
+* src/app/m-module/m-module.module.ts
+
+
+Created files:
+* .autogit/logs/log-13-1-2021-11-36-55.txt
+* src/app/dashboard/dashboard-routing.module.ts
+
+
+Deleted files:
+
+
+Renamed files:
